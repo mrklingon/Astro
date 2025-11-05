@@ -11,7 +11,7 @@ REPL = False
 
 def prt(text, REPL):
     if REPL:
-        print(text + "\n")
+        print(text)
     else:
         keyboard_layout.write(text + "\n")
     time.sleep(.25)
