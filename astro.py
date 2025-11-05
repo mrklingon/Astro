@@ -38,6 +38,11 @@ def chartStars():
         s = map[locy[i]]
         s = s[:locx[i] ] + "*" + s[locx[i]+1:]
         map[locy[i]] = s
+chartStars()
+
+def dist(l1,l2):
+    dst = (((locx[l1]-locx[l2])**2+((locy[l1]-locy[l2])**2))**.5)
+    return dst
 
 while True:
 
@@ -70,4 +75,16 @@ while True:
 
         for i in range(10):
             prt (map[i],REPL)
+
+    if Val == 2:
+        #pick a location
+        prt(" ",REPL)
+        loc = random.randrange(len(star))
+        prt("location = " + star[loc],REPL)
+        for i in range(len(star)):
+            prt (star[i] + ":" + str(locx[i])+", " + str(locy[i])+": "+str(dist(i,loc)),REPL)
+
+
+
+
     time.sleep(1)
