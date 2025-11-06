@@ -12,23 +12,41 @@ Files:
 
 When you touch pad #1, produces output like:
 ```
-Rouuah:7, 9
-Reeei:6, 9
-Ahaie:7, 0
-Zooof:5, 1
-Ahiah:2, 2
-Paafnk:8, 1
-Rouuas:6, 0
-Reuof:2, 5
-......**..
-.....*..*.
-..*.......
+Ahghie:3, 1
+Mieas:7, 1
+Syaei:1, 7
+Syuuas:1, 4
+Giafnk:5, 4
+Zoid:7, 6
+..........
+...*...*..
 ..........
 ..........
-..*.......
+.*...*....
+..........
+.......*..
+.*........
 ..........
 ..........
-..........
-......**..
 ```
 A list of stars and their x,y coordinates in a 10x10 grid, then a map of the stars.
+
+When you touch pad #2, A random star will be picked as your "location" and the list of stars will be displayed AND the distance to each one from your current location:
+
+```
+location = Syuuas
+Ahghie:3, 1: 3.60555
+Mieas:7, 1: 6.7082
+Syaei:1, 7: 3.0
+Syuuas:1, 4: 0.0
+Giafnk:5, 4: 4.0
+Zoid:7, 6: 6.32455
+
+location = Zoid
+Ahghie:3, 1: 6.40312
+Mieas:7, 1: 5.0
+Syaei:1, 7: 6.08276
+Syuuas:1, 4: 6.32455
+Giafnk:5, 4: 2.82843
+Zoid:7, 6: 0.0
+```
